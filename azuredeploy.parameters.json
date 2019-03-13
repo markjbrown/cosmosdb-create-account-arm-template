@@ -1,0 +1,42 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "accountName": {
+      "value": "[uniqueString(resourceGroup().id)]"
+    },
+    "location": {
+      "value": "westus2"
+    },
+    "api": {
+      "value": "Sql"
+    },
+    "defaultConsistencyLevel": {
+      "value": "Session"
+    },
+    "maxStalenessPrefix": {
+      "value": 100000
+    },
+    "maxIntervalInSeconds":{
+      "value": 300
+    },
+    "locations": {
+      "value": [
+          {
+          "locationName": "West US 2",
+          "failoverPriority": 0
+          },
+          {
+          "locationName": "North Central US",
+          "failoverPriority": 1
+          }
+      ]
+    },
+    "multipleWriteLocations": {
+      "value": false
+    },
+    "automaticFailover": {
+      "value": false
+    }
+  }
+}
