@@ -8,6 +8,12 @@
     "location": {
       "value": "[resourceGroup().location]"
     },
+    "primaryRegion": {
+      "value": "East US 2"
+    },
+    "secondaryRegion": {
+      "value": "West US 2"
+    },
     "api": {
       "value": "Sql"
     },
@@ -19,12 +25,6 @@
     },
     "maxIntervalInSeconds":{
       "value": 300
-    },
-    "primaryRegion": {
-      "value": "East US 2"
-    },
-    "secondaryRegion": {
-      "value": "West US 2"
     }, 
     "multipleWriteLocations": {
       "value": false
