@@ -21,7 +21,7 @@
       "value": 300
     },
     "primaryRegion": {
-      "value": "[resourceGroup().location]"
+      "value": "East US 2"
     },
     "secondaryRegion": {
       "value": "West US 2"

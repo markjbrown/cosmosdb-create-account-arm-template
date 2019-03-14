@@ -17,6 +17,7 @@
 		},
 		"api": {
 			"type": "string",
+			"defaultValue": "Sql",
 			"allowedValues": [
 				"Sql",
 				"MongoDB",
@@ -30,6 +31,7 @@
 		},
 		"defaultConsistencyLevel": {
 			"type": "string",
+			"defaultValue": "Session",
 			"allowedValues": [
 				"Eventual",
 				"ConsistentPrefix",
@@ -61,7 +63,6 @@
 		},
 		"primaryRegion":{
 			"type":"string",
-			"defaultValue": "",
 			"allowedValues": [
 				"Central US",
 				"East US",
@@ -124,7 +125,6 @@
 		},
 		"secondaryRegion":{
 			"type":"string",
-			"defaultValue": "",
 			"allowedValues": [
 				"Central US",
 				"East US",
