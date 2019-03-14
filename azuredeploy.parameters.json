@@ -3,10 +3,10 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "accountName": {
-      "value": "[uniqueString(resourceGroup().id)]"
+      "value": "GEN-UNIQUE"
     },
     "location": {
-      "value": "West US"
+      "value": "[resourceGroup().location]"
     },
     "api": {
       "value": "Sql"
@@ -15,13 +15,13 @@
       "value": "Session"
     },
     "maxStalenessPrefix": {
-      "value": 10
+      "value": 100000
     },
     "maxIntervalInSeconds":{
-      "value": 5
+      "value": 300
     },
     "primaryRegion": {
-      "value": "West US"
+      "value": "[resourceGroup().location]"
     },
     "secondaryRegion": {
       "value": "West US 2"

@@ -187,6 +187,7 @@
 	  	},	
 		"multipleWriteLocations": {
 			"type": "bool",
+			"defaultValue": false,
 			"allowedValues": [
 				true,
 				false
@@ -197,6 +198,7 @@
 		},
 		"automaticFailover": {
 			"type": "bool",
+			"defaultValue": false,
 			"allowedValues": [
 				true,
 				false
