@@ -6,7 +6,7 @@
       "value": "[uniqueString(resourceGroup().id)]"
     },
     "location": {
-      "value": "westus2"
+      "value": "[resourceGroup().location]"
     },
     "api": {
       "value": "Sql"
@@ -15,23 +15,17 @@
       "value": "Session"
     },
     "maxStalenessPrefix": {
-      "value": 100000
+      "value": 0
     },
     "maxIntervalInSeconds":{
-      "value": 300
+      "value": 0
     },
-    "locations": {
-      "value": [
-          {
-          "locationName": "West US 2",
-          "failoverPriority": 0
-          },
-          {
-          "locationName": "North Central US",
-          "failoverPriority": 1
-          }
-      ]
+    "primaryRegion": {
+      "value": "[resourceGroup().location]"
     },
+    "secondaryRegion": {
+      "value": "West US 2"
+    }, 
     "multipleWriteLocations": {
       "value": false
     },
