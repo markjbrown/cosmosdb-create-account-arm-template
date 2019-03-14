@@ -6,7 +6,7 @@
       "value": "[uniqueString(resourceGroup().id)]"
     },
     "location": {
-      "value": "[resourceGroup().location]"
+      "value": "West US"
     },
     "api": {
       "value": "Sql"
@@ -15,13 +15,13 @@
       "value": "Session"
     },
     "maxStalenessPrefix": {
-      "value": 0
+      "value": 10
     },
     "maxIntervalInSeconds":{
-      "value": 0
+      "value": 5
     },
     "primaryRegion": {
-      "value": "[resourceGroup().location]"
+      "value": "West US"
     },
     "secondaryRegion": {
       "value": "West US 2"
