@@ -1,6 +1,6 @@
 # Create a Multi-Region Azure Cosmos DB account for any API Type
 
-This template provides a great deal of flexibility to create an Azure Cosmos DB account with multiple different configurations including:
+This template will create an Azure Cosmos DB account and provides multiple different configurations including:
 
 - **API Type:** Select from any of the supported API types including: SQL, Cassandra, Gremlin, MongoDB, or Table.
 - **Consistency Level:** Select from one of the 5 consistency levels: Strong, Bounded Staleness, Session, Consistent Prefix, Eventual.
@@ -15,3 +15,5 @@ This template provides a great deal of flexibility to create an Azure Cosmos DB 
 <a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fmarkjbrown%2Fcosmosdb-create-account-arm-template%2Fmaster%2Fazuredeploy.json" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
+
+Issues with this ARM template can be filed here: [github.com/markjbrown/cosmosdb-create-account-arm-template](https://github.com/markjbrown/cosmosdb-create-account-arm-template)
